@@ -5,7 +5,9 @@ function App() {
 
   return (
     <>
-    <Navbar />
+    <body className='bg-black'>
+      <Navbar />
+    </body>
     </>
   )
 }
