@@ -3,7 +3,7 @@ import heroShoe from "../assets/heroshoes.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative bg-black text-white overflow-hidden">
+    <section className="relative bg-black text-white overflow-hidden top-10">
       
       {/* Background Glow Effect */}
       <div className="absolute w-125 h-125 bg-red-600/20 blur-[120px] rounded-full -top-25 -left-25"></div>
