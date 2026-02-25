@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import aboutImage from "../assets/about.jpg";
 
 export default function About() {
@@ -12,13 +11,7 @@ export default function About() {
       <div className="container mx-auto px-6 relative z-10">
 
         {/* Section Heading (Consistent Style) */}
-        <motion.div
-          initial={{ opacity: 0, y: -40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
+        <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-red-500 via-orange-400 to-yellow-400 bg-clip-text text-transparent">
             About The Shoes Company
           </h2>
@@ -27,36 +20,22 @@ export default function About() {
             We don't just create shoes. We create confidence, movement, and 
             identity. Every pair tells a story — your story.
           </p>
-        </motion.div>
+        </div>
 
         {/* Content Section */}
         <div className="mt-20 flex flex-col md:flex-row items-center gap-16">
 
           {/* Image Side */}
-          <motion.div
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="flex-1"
-          >
-            <motion.img
+          <div className="flex-1">
+            <img
               src={aboutImage}
               alt="About Shoes"
               className="rounded-3xl shadow-2xl w-full h-96 object-cover"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
             />
-          </motion.div>
+          </div>
 
           {/* Text Side */}
-          <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="flex-1"
-          >
+          <div className="flex-1">
             <h3 className="text-2xl font-semibold text-white">
               Crafted for Performance & Style
             </h3>
@@ -76,7 +55,7 @@ export default function About() {
             <button className="mt-8 bg-red-600 hover:bg-red-700 transition duration-300 px-8 py-3 rounded-full font-semibold shadow-lg shadow-red-600/30">
               Learn More
             </button>
-          </motion.div>
+          </div>
 
         </div>
       </div>
