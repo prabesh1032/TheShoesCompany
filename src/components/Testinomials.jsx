@@ -1,6 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import { Star } from "lucide-react";
+import userImg from "../assets/user.jpg";
+import pratikImg from "../assets/pratik.jpg";
+import pradipImg from "../assets/pradip.jpg";
+import arjunImg from "../assets/arjun.jpg";
+import studentImg from "../assets/studentcamera.png";
+import heroImg from "../assets/hero.png";
 
 export default function Testimonials() {
   const testimonials = [
@@ -9,42 +15,42 @@ export default function Testimonials() {
       role: "Athlete",
       message:
         "These shoes completely changed my performance. Super lightweight and extremely comfortable!",
-      image: "../assets/user.jpg",
+      image: userImg,
     },
     {
       name: "Pratik Tiwari",
       role: "Fashion Designer",
       message:
         "Stylish, bold, and premium quality. I wear them almost every day!",
-      image: "../assets/pratik.jpg",
+      image: pratikImg,
     },
     {
       name: "Pradip Khanal",
       role: "Entrepreneur",
       message:
         "The delivery was fast and the quality exceeded my expectations. Highly recommended!",
-      image: "../assets/pradip.jpg",
+      image: pradipImg,
     },
     {
       name: "Arjun Bhusal",
       role: "Teacher",
       message:
         "Best shoes I've ever owned. The comfort level is unmatched and they look amazing!",
-      image: "../assets/arjun.jpg",
+      image: arjunImg,
     },
     {
       name: "Ritesh kafle",
       role: "Musician",
       message:
         "From stage performances to daily wear, these shoes never disappoint. Truly exceptional!",
-      image: "../assets/studentcamera.jpg",
+      image: studentImg,
     },
     {
       name: "Raju Shrestha",
       role: "Marathon Runner",
       message:
         "I've tested many running shoes, but these are by far the best. Highly recommended for athletes!",
-      image: "../assets/hero.png",
+      image: heroImg,
     },
   ];
 
