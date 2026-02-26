@@ -2,3 +2,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Scroll offset for fixed navbar */
+section {
+  scroll-margin-top: 100px;
+}
