@@ -15,15 +15,15 @@ export default function Navbar() {
 
   return (
     <header className="fixed w-full top-0 left-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between">
 
         {/* Logo */}
         <a href="#home" className="flex items-center">
-          <img src={logo} className="w-24 h-auto" alt="Logo" />
+          <img src={logo} className="w-16 sm:w-20 md:w-24 h-auto" alt="Logo" />
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-10 text-white font-medium">
+        <nav className="hidden md:flex gap-6 lg:gap-10 text-white font-medium text-sm lg:text-base">
           {navLinks.map((link, index) => (
             <a
               key={index}
@@ -39,14 +39,14 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <div className="md:hidden text-white">
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={26} /> : <Menu size={26} />}
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black border-t border-white/10 px-6 py-6 space-y-6 text-white">
+        <div className="md:hidden bg-black border-t border-white/10 px-4 sm:px-6 py-4 sm:py-6 space-y-4 sm:space-y-6 text-white text-sm sm:text-base">
           {navLinks.map((link, index) => (
             <a
               key={index}

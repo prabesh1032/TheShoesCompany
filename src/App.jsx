@@ -9,6 +9,7 @@ import Testimonials from './components/Testinomials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './ScrollToTop';
+import Product from './components/Product';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Product />
       <HowItWorks />
       <Testimonials />
       <Contact />

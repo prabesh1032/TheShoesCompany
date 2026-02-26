@@ -2,3 +2,19 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Scroll offset for fixed navbar */
+section {
+  scroll-margin-top: 100px;
+}
+
+/* Swiper Pagination Bullets - White Color */
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+  opacity: 1;
+}
